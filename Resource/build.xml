@@ -100,4 +100,5 @@
         needxmlfile="false">
     </war>
 </target>
+                <echo> All the task are completed </echo>
 </project>
