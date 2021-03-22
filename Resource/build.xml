@@ -26,6 +26,7 @@
         <pathelement location="../../apache-tomcat-8.5.64/lib/jaspic-api.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/jsp-api.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/servlet-api.jar"/>
+        <pathelement location="../../../lib/servlet-api.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/tomcat-api.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/tomcat-coyote.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/tomcat-dbcp.jar"/>
