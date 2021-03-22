@@ -42,6 +42,8 @@
         <pathelement location="../../apache-tomcat-8.5.64/lib/tomcat-util.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/tomcat-websocket.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/websocket-api.jar"/>
+      	<pathelement location="**/*.jar"/>
+
     </path>
     <path id="Resource.classpath">
         <pathelement location="build/classes"/>
