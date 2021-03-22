@@ -14,6 +14,7 @@ steps:
   inputs:
     workingDirectory: ''
     buildFile: 'Resource/build.xml'
+    targets: war
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
