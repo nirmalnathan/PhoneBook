@@ -10,13 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: Ant@1
+- task: Maven@3
   inputs:
-    workingDirectory: ''
-    buildFile: 'Resource/build.xml'
-    targets: war
+    mavenPomFile: 'pom.xml'
+    publishJUnitResults: true
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
-    testResultsFiles: '**/TEST-*.xml'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
