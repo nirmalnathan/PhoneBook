@@ -4,7 +4,7 @@
   <artifactId>Resource</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
-    <sourceDirectory>${project.basedir}/src</sourceDirectory>
+    <sourceDirectory>../src</sourceDirectory>
    </build>
   <dependencies>
 <dependency>
