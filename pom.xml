@@ -14,6 +14,22 @@
 	      <version>2.4</version>
 	  		  <configuration>
 				  <webXml>Resource\src\main\webapp\WEB-INF\web.xml</webXml>        
+				  <webResources>
+                    <resource>
+                        <directory>src/main/webapp</directory>
+                        <filtering>true</filtering>
+                        <includes>
+                            <include>register.html</include>
+                        </includes>
+                    </resource>
+                    <resource>
+                        <directory>src/main/webapp</directory>
+                        <filtering>false</filtering>
+                        <excludes>
+                            <exclude>register.html</exclude>
+                        </excludes>
+                    </resource>
+                </webResources>
 		  </configuration>
 </plugin>
     
