@@ -6,7 +6,7 @@
     <packaging>war</packaging>
     
    <build>
-    <sourceDirectory>${basedir}/src</sourceDirectory>
+    <sourceDirectory>Resource/src</sourceDirectory>
     <plugins>
         <plugin>           
 	  <groupId>org.apache.maven.plugins</groupId>
