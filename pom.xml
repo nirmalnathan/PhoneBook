@@ -28,7 +28,7 @@
     </plugins>
 	   <resources>
             <resource>
-                <directory>src/main/</directory>
+                <directory>Resource/src/main/</directory>
                 <includes>
                     <include>webapp/**/*</include>
                 </includes>
