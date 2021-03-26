@@ -26,7 +26,6 @@
         <pathelement location="../../apache-tomcat-8.5.64/lib/jaspic-api.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/jsp-api.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/servlet-api.jar"/>
-        <pathelement location="../../../lib/servlet-api.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/tomcat-api.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/tomcat-coyote.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/tomcat-dbcp.jar"/>
@@ -43,8 +42,6 @@
         <pathelement location="../../apache-tomcat-8.5.64/lib/tomcat-util.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/tomcat-websocket.jar"/>
         <pathelement location="../../apache-tomcat-8.5.64/lib/websocket-api.jar"/>
-      	<pathelement location="**/*.jar"/>
-
     </path>
     <path id="Resource.classpath">
         <pathelement location="build/classes"/>
@@ -88,20 +85,31 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-                
-                <target name="war" description="Bundles the application as a WAR file" depends="clean, build">
-    <mkdir dir="WebContent/WEB-INF/classes"/>
+	<target name="war" description="Bundles the application as a WAR file" depends="clean, build">
+ 
+	   <mkdir dir="WebContent/WEB-INF/classes"/>
      
-    <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
-            <fileset dir="build/classes">
-            <include name="**/*.class"/>
-            </fileset>
-    </copy>
+  
+<echo>  start </echo>
+		  <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+		            <fileset dir="build/classes">
+
+		            <include name="*/.class"/>
+       
+			     </fileset>
+   
+		 </copy>
      
-    <war destfile="Resource.war"
-        basedir="WebContent"
-        needxmlfile="false">
-    </war>
+   
+
+	 <war destfile="test.war"
+    
+	        basedir="WebContent"
+
+        	needxmlfile="false">
+   
+	 </war>
+
 </target>
-                <echo> All the task are completed </echo>
+
 </project>
