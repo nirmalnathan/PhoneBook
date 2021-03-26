@@ -26,15 +26,7 @@
         </configuration>
       </plugin>
     </plugins>
-	   <resources>
-            <resource>
-                <directory>Resource/src/main/</directory>
-                <includes>
-                    <include>webapp/**/*</include>
-                </includes>
-            </resource>
-        </resources>
-  
+	   
   </build>
   <dependencies>
 <dependency>
