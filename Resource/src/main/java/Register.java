@@ -46,9 +46,9 @@ ps.setString(1,n);
 ps.setString(2,p);            
 int i=ps.executeUpdate();  
 if(i>=0)  
-out.print("Hello" + n );
+out.print("Hello" +"  "+ n  +"  " + "\n" );
 System.getProperty("line.separator"); 	
-out.print("You are successfully registered...");  
+out.print("Your phone number is added to the phone book successfully..");  
      
           
 }catch (Exception e2) {System.out.println(e2);}  
