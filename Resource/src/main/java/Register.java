@@ -29,7 +29,7 @@ String p=request.getParameter("userPhone");
   
           
 try{  
-	out.print("conneecting to DB...");  
+	
 	Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 	String connectionUrl="jdbc:sqlserver://pbookserver.database.windows.net:1433;database=PhoneBook;user=nirmal@pbookserver;password=Root123#;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30";
 	/*
@@ -42,11 +42,15 @@ try{
 	
 	
 PreparedStatement ps=con.prepareStatement("insert into pbook values(?,?)");  
-out.print("PS ready");  
 ps.setString(1,n);  
 ps.setString(2,p);            
 int i=ps.executeUpdate();  
 if(i>=0)  
+out.print("Hello" + n );
+System.getProperty("line.separator") 	
+out.print("You are successfully registered...");  
+
+	
 out.print("You are successfully registered...");  
       
           
