@@ -38,7 +38,7 @@ try{
 	 * ;
 	 */  
 	Connection con = DriverManager.getConnection(connectionUrl); 
-	out.print("Connection success");  
+	
 	
 	
 PreparedStatement ps=con.prepareStatement("insert into pbook values(?,?)");  
@@ -47,12 +47,9 @@ ps.setString(2,p);
 int i=ps.executeUpdate();  
 if(i>=0)  
 out.print("Hello" + n );
-System.getProperty("line.separator") 	
+System.getProperty("line.separator"); 	
 out.print("You are successfully registered...");  
-
-	
-out.print("You are successfully registered...");  
-      
+     
           
 }catch (Exception e2) {System.out.println(e2);}  
           
