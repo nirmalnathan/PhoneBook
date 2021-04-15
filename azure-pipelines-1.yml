@@ -13,5 +13,5 @@ steps:
     resourceGroupName: 'Hello'
     location: 'eastus'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/nirmalnathan/PhoneBook/main/azure-pipelines-1.yml'
+    csmFileLink: 'https://raw.githubusercontent.com/nirmalnathan/PhoneBook/main/azuredeploy.json'
     deploymentMode: 'Incremental'
