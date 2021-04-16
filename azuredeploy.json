@@ -17,4 +17,5 @@
                 "tier": "[parameters('storageAccountTier')]"
             }
         },
-    }
+    ]
+}
