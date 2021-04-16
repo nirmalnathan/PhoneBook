@@ -15,7 +15,7 @@ steps:
     location: 'Central US'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/nirmalnathan/PhoneBook/main/azuredeploy.json'
-    csmParametersFileLink: 'https://raw.githubusercontent.com/nirmalnathan/PhoneBook/main/ParametersQA.json'
+    csmParametersFileLink: 'https://raw.githubusercontent.com/nirmalnathan/PhoneBook/main/ParametersStage.json'
     deploymentMode: 'Incremental'
 
 
