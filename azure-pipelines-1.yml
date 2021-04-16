@@ -16,9 +16,6 @@ steps:
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/nirmalnathan/PhoneBook/main/azuredeploy.json'
     csmParametersFileLink: 'https://raw.githubusercontent.com/nirmalnathan/PhoneBook/main/ParametersQA.json'
-    overrideParameters: |
-      -storageAccountName qastorage
-      -storageAccountTier "Standard"
-      -storageAccountSku "Standard_GRS"
     deploymentMode: 'Incremental'
+
 
