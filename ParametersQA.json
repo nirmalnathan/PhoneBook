@@ -1,25 +1,21 @@
 {
-"$schema":"https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-
-"parameters": {
-		"storageAccountName": 
-					{
-					"type": "string",
-					"minLength": 3,
-					"maxLength": 24
-					},
-		"storageAccountTier":
-					{
-					"type": "string",
-					"allowedValues": ["Standard","Premium"],
-					"defaultValue": "Standard"
-					},
-		"storageAccountSku": 
-					{
-					"type": "string",
-					"allowedValues": ["Standard_LRS","Standard_GRS"],
-					"defaultValue": "Standard_LRS"
-					}
-} 
-
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        
+	    "storageAccountName" : 
+		    {
+		    "value" : "qatesting"
+		    },
+        
+	    "storageAccountTier": 
+		    {
+		      "value" : "Standard"
+		    },        
+        
+	    "storageAccountSku": 
+		    {
+			"value" : "Standard_LRS"
+		    }
+	}
 }
