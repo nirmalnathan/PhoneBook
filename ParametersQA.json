@@ -1,43 +1,25 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-  "contentVersion": "1.0.0.0",
-"parameters": {
-        "storageAccountName" : {
-            "type" : "string",
-            "minLength" : 3,
-            "maxLength" : 24,
-            "metadata" : {
-                "description" : "Specify a name for the storage account. This needs to be unique."
-            }
-        },
-        "storageAccountTier": {
-            "type" : "string",
-            "allowedValues" : [
-                "Standard",
-                "Premium"
-            ],
-            "defaultValue" : "Standard",
-            "metadata" : {
-                "description" : "Select a storage SKU tier"
-            }
-        },        
-        "storageAccountSku": {
-            "type" : "string",
-            "allowedValues" : [
-                "Standard_LRS",
-                "Standard_GRS",
-                "Standard_RAGRS",
-                "Standard_ZRS",
-                "Premium_LRS",
-                "Premium_ZRS",
-                "Standard_GZRS",
-                "Standard_RAGZRS"
-            ],
-            "defaultValue" : "Standard_LRS",
-            "metadata" : {
-                "description" : "Select one of the available SKU names"
-            }
-        }
-    }
-}
+"$schema":"https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
 
+"parameters": {
+		"storageAccountName": 
+					{
+					"type": "string",
+					"minLength": 3,
+					"maxLength": 24
+					},
+		"storageAccountTier":
+					{
+					"type": "string",
+					"allowedValues": ["Standard","Premium"],
+					"defaultValue": "Standard"
+					},
+		"storageAccountSku": 
+					{
+					"type": "string",
+					"allowedValues": ["Standard_LRS","Standard_GRS"],
+					"defaultValue": "Standard_LRS"
+					}
+} 
+
+}
