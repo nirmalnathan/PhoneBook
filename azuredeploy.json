@@ -16,6 +16,6 @@
                 "name": "[parameters('storageAccountSku')]",
                 "tier": "[parameters('storageAccountTier')]"
             }
-        },
+        }
     ]
 }
